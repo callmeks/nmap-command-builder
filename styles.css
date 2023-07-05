@@ -1,0 +1,254 @@
+:root {
+  --primary-color: #302AE6;
+  --secondary-color: #000000;
+  --explanation-color: #424242;
+  --bg-color: #fff;
+  --bs-border-color: #dee2e6;
+  --box-color: #f8f9fa;
+  --tab-btn-color: #ccc;
+  --tab-btn-hover-color: #ddd;
+  --icon-bg: #151513; 
+  --icon-color:#fff;
+}
+
+
+[data-theme="dark"] {
+  --primary-color: #9A97F3;
+  --secondary-color: #ffffff;
+  --explanation-color: #e1e1ff;
+  --bg-color: #161625;
+  --bs-border-color: #495057;
+  --box-color: #212529;
+  --tab-btn-color: #aaa;
+  --tab-btn-hover-color: #bbb;
+  --icon-bg: #fff; 
+  --icon-color:#151513;
+}
+
+
+/* for html and body */
+body,
+html {
+  height: 100%;
+  width: 100%;
+  background-color: var(--bg-color) !important;
+  color: var(--primary-color) !important;
+}
+
+/* for all 3 section */
+.center {
+  margin: auto;
+  width: 80%;
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+
+/* for tab */
+.tab {
+  overflow: hidden;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: 1px solid var(--bs-border-color) !important;
+  border-bottom: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  height: inherit;
+}
+
+.tab button:hover {
+  background-color: var(--tab-btn-hover-color) !important;
+}
+
+.tab button.active {
+  background-color: var(--tab-btn-color) !important;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid var(--bs-border-color) !important;
+}
+
+
+/* For Nmap result */
+.form-control-plaintext {
+  background-color: var(--bg-color) !important;
+  border: 1px solid !important;
+  border-color: var(--bs-border-color) !important;
+}
+
+/* for copy button */
+.comment {
+  position: relative;
+  display: inline-block;
+}
+
+/* for copy button */
+.comment .commenttext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 120%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* for copy button */
+.comment .commenttext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* for copy button */
+.comment:hover .commenttext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* for copy button */
+#Copy {
+  height: 100%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-color: var(--bs-border-color) !important;
+  color: inherit !important;
+}
+
+/* for explanation text */
+.explanation {
+  margin-bottom: 1rem !important;
+  margin-top: .25rem;
+  font-size: .875em;
+  color: var(--explanation-color) !important;
+}
+
+/* for header part */
+.top {
+  padding: 1rem;
+  background-color: var(--box-color) !important;
+}
+
+/* for content part */
+.mid {
+  border: 1px solid;
+  border-color: #dee2e6;
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* for bottom part */
+.btm {
+  padding: 1rem;
+  background-color: var(--box-color) !important;
+}
+
+/* for input group text */
+.input-group-text {
+  color: inherit !important;
+}
+
+/* for NSE port number */
+#NSE-Port-Number {
+  width: 20%;
+}
+
+/* for input group */
+.input-group {
+  margin-top: 1rem;
+  margin-bottom: .25rem;
+}
+
+/* for form selection */
+.form-select {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* for the explanation of NSE */
+.summary {
+  margin-top: .5rem !important;
+  margin-bottom: .5rem !important;
+}
+
+/* for GitHub icon */
+#Github-Cat {
+  fill: var(--icon-bg);
+  color: var(--icon-color);
+  position: absolute;
+  top: 0;
+  border: 0;
+  right: 0;
+}
+
+/* for GitHub icon */
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out
+}
+
+/* for GitHub icon */
+@keyframes octocat-wave {
+
+  0%,
+  100% {
+    transform: rotate(0)
+  }
+
+  20%,
+  60% {
+    transform: rotate(-25deg)
+  }
+
+  40%,
+  80% {
+    transform: rotate(10deg)
+  }
+}
+
+/* for GitHub icon */
+@media (max-width:500px) {
+  .github-corner:hover .octo-arm {
+    animation: none
+  }
+
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out
+  }
+}
+
+/* for switching color */
+#Switch-Color {
+  background-color: var(--icon-bg);
+  color: var(--icon-color);
+  position: absolute;
+  padding: 10px;
+  top: 0;
+  border: 0;
+  left: 0;
+  font-size: 20px;
+}
+
+/* for label element */
+label{
+  color:var(--secondary-color);
+}
