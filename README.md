@@ -1,2 +1,4 @@
-# nmap-command-builder
-A Nmap command generator for everyone to use 
+# My FYP Project - Nmap Command Builder (NCB)
+
+- Nmap Command Builder is a open source web application to generate Nmap command.
+
