@@ -1734,8 +1734,8 @@ document.addEventListener("DOMContentLoaded", function () {
   SetNmap();
   NSEDefinition();
 
-  // set onchange and oninput function on all button and input field in advanced mode 
-  var AdvanceIDs = [
+  // set onchange and oninput function on all button and input field in advanced and NSE mode 
+  var ElementIDs = [
     { id: "Nmap-sL", event: "change" },
     { id: "Nmap-sn", event: "change" },
     { id: "Nmap-Pn", event: "change" },
@@ -1779,8 +1779,8 @@ document.addEventListener("DOMContentLoaded", function () {
     { id: "NSE-Port", event: "change" },
     { id: "NSE-Port-Number", event: "input" }
   ];
-  AdvanceIDs.forEach(function (AdvanceID) {
-    document.getElementById(AdvanceID.id).addEventListener(AdvanceID.event, function () {
+  ElementIDs.forEach(function (ElementID) {
+    document.getElementById(ElementID.id).addEventListener(ElementID.event, function () {
       DisableEnableInput();
       SetNmap();
       NSEDefinition();
@@ -1794,9 +1794,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   // trigger Light/Dark mode
   document.getElementById('Switch-Color').addEventListener('click', SwitchColorMode);
-
-
-
 
 });
 
