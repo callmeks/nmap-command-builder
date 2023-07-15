@@ -1734,7 +1734,7 @@ document.addEventListener("DOMContentLoaded", function () {
   SetNmap();
   NSEDefinition();
 
-  // set onchange and oninput function on all button and input field in advanced and NSE mode 
+  // set onchange and oninput function on all button and input field
   var ElementIDs = [
     { id: "Nmap-sL", event: "change" },
     { id: "Nmap-sn", event: "change" },
